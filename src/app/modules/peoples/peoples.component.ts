@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-peoples',
-    template: 'ale',
-    styleUrls: ['./peoples.component.scss']
+    template: '<router-outlet></router-outlet>'
 })
 export class PeoplesComponent {
     constructor() { }
