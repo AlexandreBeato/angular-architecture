@@ -1,0 +1,9 @@
+$row-margin-top: 15px;
+
+.row {
+    margin-top: $row-margin-top;
+}
+
+.row:first-of-type {
+    margin-top: 0;
+}
