@@ -1,1 +1,11 @@
-ale god
+<div class="container">
+    <h3 class="h3">Peoples</h3>
+    <hr>
+    <div *ngIf="peoples">
+        <app-people-list [peoples]="peoples" (detailedPeople)="seeDetails($event)"></app-people-list>
+    </div>
+
+    <div *ngIf="peopleDetailed">
+        <app-details-people [peopleDetailed]="peopleDetailed" (detailedClosed)="detailedClose()"></app-details-people>
+    </div>
+</div>

@@ -1,1 +1,20 @@
-aleeeeeeeeee
+<table class="table table-hover table-striped table-sm">
+    <thead>
+        <tr class="bg-primary text-white">
+            <th>Name</th>
+            <th class="text-center">Birth year</th>
+            <th class="text-center">Gender</th>
+            <th class="text-center">Height</th>
+            <th class="text-center">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let people of peoples">
+            <td>{{ people.name }}</td>
+            <td class="text-center">{{ people.birth_year }}</td>
+            <td class="text-center">{{ people.gender }}</td>
+            <td class="text-center">{{ people.height }}</td>
+            <td class="text-center"><a (click)="detailPeople(people)">See details</a></td>
+        </tr>
+    </tbody>
+</table>

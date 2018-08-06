@@ -3,3 +3,11 @@ $container-margin-top: 20px;
 .container {
     margin-top: $container-margin-top;
 }
+
+a {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}

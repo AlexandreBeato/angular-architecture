@@ -1,0 +1,54 @@
+<div class="row">
+    <div class="col-lg-10 col-md-10 col-sm-10 text-left">
+        <h3 class="h3">{{ peopleDetailed.name }}'s details</h3>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 text-right">
+        <h3 class="h3">
+            <a (click)="closeDetails()">
+                <i class="fas fa-times"></i>
+            </a>
+        </h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <td>
+                    <b>Name</b>
+                </td>
+                <td>{{ peopleDetailed.name }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Birth year</b>
+                </td>
+                <td>{{ peopleDetailed.birth_year }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Gender</b>
+                </td>
+                <td>{{ peopleDetailed.gender }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Height</b>
+                </td>
+                <td>{{ peopleDetailed.height }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Films appearances</b>
+                </td>
+                <td>{{ peopleDetailed.films.length }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Species</b>
+                </td>
+                <td>{{ peopleDetailed.species.length }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
