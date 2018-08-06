@@ -1,0 +1,20 @@
+<table class="table table-hover table-striped">
+    <thead>
+        <tr class="bg-primary text-white">
+            <th>Title</th>
+            <th>Director</th>
+            <th>Producer</th>
+            <th class="text-center">Release date</th>
+            <th class="text-center">Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let film of films">
+            <td>{{ film.title }}</td>
+            <td>{{ film.director }}</td>
+            <td>{{ film.producer }}</td>
+            <td class="text-center">{{ film.release_date | date: 'yyyy/MM/dd' }}</td>
+            <td class="text-center"><a (click)="detailFilm(film)">See details</a></td>
+        </tr>
+    </tbody>
+</table>

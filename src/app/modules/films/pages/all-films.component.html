@@ -1,0 +1,11 @@
+<div class="container">
+    <h3 class="h3">Films</h3>
+    <hr>
+    <div *ngIf="films">
+        <app-film-list [films]="films" (filmSelected)="filmDetails($event)"></app-film-list>
+    </div>
+    <hr>
+    <div *ngIf="filmDetailed">
+        <app-film-detail [film]="filmDetailed" (filmDetailClosed)="filmDetailClose()"></app-film-detail>
+    </div>
+</div>

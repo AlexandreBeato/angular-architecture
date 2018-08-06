@@ -9,6 +9,5 @@ interface People {
     skin_color: string;
     homeworld: string;
     films: Film[];
-    species: Specie[];
     url: string;
 }

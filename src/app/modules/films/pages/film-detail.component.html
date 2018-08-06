@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-lg-10 col-md-10 col-sm-10">
+        <h3 class="h3">{{ film.title }}'s details</h3>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 text-right">
+        <h3 class="h3">
+            <a (click)="filmDetailClose()">
+                <i class="fas fa-times"></i>
+            </a>
+        </h3>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-lg-8 col-md-7 col-sm-12">
+        <table class="table table-striped table-bordered">
+            <tr>
+                <td>
+                    <b>Title</b>
+                </td>
+                <td>{{ film.title }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Director</b>
+                </td>
+                <td>{{ film.director }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Producer</b>
+                </td>
+                <td>{{ film.producer }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Release date</b>
+                </td>
+                <td>{{ film.release_date }}</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Species</b>
+                </td>
+                <td>{{ film.species.length }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="col-lg-4 col-md-5 col-sm-12">
+        <table class="table table-striped table-bordered">
+            <tr>
+                <td>
+                    <b>Opening crawl</b>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{ film.opening_crawl }}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
