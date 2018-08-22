@@ -2,6 +2,10 @@
 
 A simple project using a good way that I found to develop and maintain a Angular application.
 
+## Live Demo
+
+Online demo is [here](http://angular-architecture.getforge.io/).
+
 ## Getting Started
 
 To run, you'll need to install all the dependencies describes in **package.json** executing:
