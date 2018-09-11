@@ -4,7 +4,7 @@ A simple project using a good way that I found to develop and maintain a Angular
 
 ## Live Demo
 
-Online demo is [here](http://angular-architecture.getforge.io/).
+Online demo is [here](http://angular-architecture.kissr.com/).
 
 ## Getting Started
 
